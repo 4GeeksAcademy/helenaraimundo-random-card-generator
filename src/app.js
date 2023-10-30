@@ -6,12 +6,15 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  document.querySelector(".card").classList.add(generateRandomSuit());
-  document.querySelector(".card").innerHTML = generateRandomNumber();
+  const randomSuit = generateRandomSuit();
+  document.querySelector(".card").classList.add(randomSuit);
+  document.querySelector(".top-suit").innerHTML = randomSuit;
+  document.querySelector(".botton-suit").innerHTML = randomSuit;
+  document.querySelector(".number").innerHTML = generateRandomNumber();
 };
 
 let generateRandomSuit = () => {
-  let suit = ["diamond", "club", "heart", "spade"];
+  let suit = ["♦", "♥", "♠", "♣"];
   let indexsuit = Math.floor(Math.random() * suit.length);
   return suit[indexsuit];
 };

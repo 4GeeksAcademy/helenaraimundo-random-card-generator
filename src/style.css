@@ -1,15 +1,16 @@
 body {
   background-color: green;
+  box-sizing: border-box;
 }
 
 .card {
   display: inline-block;
   margin: auto;
   background: white;
-  height: 550px;
-  width: 350px;
-  padding: 10px;
-  padding-top: 275px;
+  height: 200px;
+  width: 250px;
+  padding: 20px;
+  padding-top: 200px;
   border-radius: 20px;
   border: 1px solid black;
   position: relative;
@@ -21,6 +22,12 @@ body {
   left: 20px;
   font-size: 75px;
 }
+
+.number {
+  font-size: 75px;
+  text-align: center;
+}
+
 .botton-suit {
   position: absolute;
   bottom: 20px;

@@ -4,33 +4,37 @@ body {
 }
 
 .card {
-  display: inline-block;
+  text-align: center;
   margin: auto;
   background: white;
-  height: 200px;
-  width: 250px;
+  height: 560px;
+  width: 400px;
   padding: 20px;
-  padding-top: 200px;
+  margin-top: 170px;
   border-radius: 20px;
   border: 1px solid black;
   position: relative;
-}
-
-.top-suit {
-  position: absolute;
-  top: 20px;
-  left: 20px;
   font-size: 75px;
+  .top-suit {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .botton-suit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
 }
-
 .number {
-  font-size: 75px;
+  font-size: 150px;
   text-align: center;
 }
 
-.botton-suit {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-size: 75px;
+.♦ {
+  color: red;
+}
+
+.♥ {
+  color: red;
 }
